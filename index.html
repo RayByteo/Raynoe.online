@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raynoe.online</title>
+    <style>
+        @font-face {
+            font-family: 'ShiftyNotes';
+            src: url(ShiftyNotes.ttf);
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh; 
+            padding: 50px;
+            background-color: #FFFFF0;
+        }
+        h1 {
+            font-family: ShiftyNotes;
+            font-size: 4em;
+            margin: 0;
+            padding: 0px;
+        }
+        h2 {
+            font-family: ShiftyNotes;
+            font-size: 2em;
+            margin: 0;
+            padding: 0px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            justify-items: center; /* Align items in the center horizontally */
+            align-items: center; /* Align items in the center vertically */
+        }
+        .game-icon {
+            width: 400px;
+            height: 320px;
+            border-radius: 15px;
+            border: 5px solid black;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .game-icon:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>Raynoe.online</h1>
+    <h2>a website with my games</h2>
+    <div class="grid-container">
+        <a href="https://itch.io/embed-upload/10626492?color=333333&uuid=b5bcf137e440f63e2f29c1c681d278d2" target="_blank">
+            <img src="balloonpopper.png" alt="Game Icon" class="game-icon">
+        </a>
+        <a href="https://itch.io/embed-upload/10631624?color=333333&uuid=b5bcf137e440f63e2f29c1c681d278d2" target="_blank">
+            <img src="puffngrow.png" alt="Game Icon" class="game-icon">
+        </a>
+    </div>
+</body>
+</html>
